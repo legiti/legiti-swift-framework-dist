@@ -1,0 +1,11 @@
+framework module InspetorSwiftFramework {
+  umbrella header "InspetorSwiftFramework.h"
+
+  export *
+  module * { export * }
+}
+
+module InspetorSwiftFramework.Swift {
+    header "InspetorSwiftFramework-Swift.h"
+    requires objc
+}
