@@ -8,10 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-//! Project version number for InspetorSwiftFramework.
-FOUNDATION_EXPORT double InspetorSwiftFrameworkVersionNumber;
+//! Project version number for Inspetor.
+FOUNDATION_EXPORT double InspetorVersionNumber;
 
-//! Project version string for InspetorSwiftFramework.
-FOUNDATION_EXPORT const unsigned char InspetorSwiftFrameworkVersionString[];
+//! Project version string for Inspetor.
+FOUNDATION_EXPORT const unsigned char InspetorVersionString[];
 
-// In this header, you should import all the public headers of your framework using statements like #import <InspetorSwiftFramework/PublicHeader.h>
+// In this header, you should import all the public headers of your framework using statements like #import <Inspetor/PublicHeader.h>
