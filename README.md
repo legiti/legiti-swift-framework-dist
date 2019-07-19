@@ -10,6 +10,10 @@ Inspetor is an product developed to help your company to avoid fraudulent transa
 
 P.S.: the library was made in Swift and all of the code you'll see here is Swift as well.
 
+
+## Demo
+If you think that this tutorial and whatever you saw 'til now wasn't clear enough, maybe you need some hand's on. Thinking about that, our team builded an Demo App to test our library and you can clone from [here](https://github.com/inspetor/inspetor-ios-demo-app). You'll find all of our tracker requests and how to instantiante our library with the best practices. Good luck!
+
 ## Setup Guide
 This is the step-by-step Inspetor integration:
 
