@@ -25,17 +25,17 @@ The Inspetor iOS Library can be installed through [CocoaPods](https://cocoapod.o
 When you import the Inspetor library you will see that you are actually installing more than one library, since the Inspetor iOS Library have some depndencies.
 
 ### Library setup
-You must provide your config to setup our library. To do that, you need to pass us your configurations through our `setup()` function.
+You must provide your config to setup our library. To do that, you need to pass us your configurations through our `setup()` function. There is an example in the code snipet bellow.
 
-All the access to the Inspetor functions is made through our `sharedInstance()` that is available by calling the `Inspetor.sharedInstance()`. But before you can call any of our functions you need to configure the library. To do that all you need is call the function `setup` from our `sharedInstance()` and pass your configurations. You can see an example bellow:
+All the access to the Inspetor functions is made through our `sharedInstance()` that is available by calling the `Inspetor.sharedInstance()`. 
 
 You **should** instantiate the Inspetor Library in your application `AppDelegate` in the `didFinishLaunchingWithOptions` function.
 
 ```
   do {
   try Inspetor.sharedInstance().setup(appId: "123", trackerName: "cool.name", devEnv: true)
-} catch TrackerException.internalError(let message) {
-  print(message)
+} catch TrackerException.requiredConfig(let code, let message) {
+  print("code: \(code) - message: \(message)")
 } catch {
   print("Error")
 }
