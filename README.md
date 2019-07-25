@@ -1,5 +1,5 @@
 <p>
-  <img src="https://github.com/inspetor/slate/blob/master/source/images/logo-color.png" width="200" height="40" alt="Inspetor Logo"> </img>
+  <img src="https://inspetor-assets.s3-sa-east-1.amazonaws.com/images/inspetor-logo.png" width="200" height="40" alt="Inspetor Logo">
 </p>
 
 # Inspetor Antifraud
@@ -9,7 +9,6 @@ Antrifraud Inspetor library for iOS.
 Inspetor is an product developed to help your company to avoid fraudulent transactions. This README file should help you to integrate the Inspetor iOS library into your product with a couple steps. 
 
 P.S.: the library was made in Swift and all of the code you'll see here is Swift as well.
-
 
 ## Demo
 If you think that this tutorial and whatever you saw 'til now wasn't clear enough, maybe you need some hand's on. Thinking about that, our team builded an Demo App to test our library and you can clone from [here](https://github.com/inspetor/inspetor-ios-demo-app). You'll find all of our tracker requests and how to instantiante our library with the best practices. Good luck!
@@ -56,4 +55,5 @@ if (Inspetor.isConfigured()) {
 ### Models
 If you are comming from one of our backend libraries you will notice that we do not use models in our frontend libraries. Here you just need to send us the id of the model.
 
-**For more info you should check the [Inspetor Frontend docs](https://inspetor.github.io/docs-frontend)
+## More Information
+For more info you should check the [Inspetor Frontend docs](https://inspetor.github.io/docs-frontend)
