@@ -11,7 +11,7 @@ Inspetor is an product developed to help your company to avoid fraudulent transa
 P.S.: the library was made in Swift and all of the code you'll see here is Swift as well.
 
 ## Demo
-If you think that this tutorial and whatever you saw 'til now wasn't clear enough, maybe you need some hand's on. Thinking about that, our team builded an Demo App to test our library and you can clone from [here](https://github.com/inspetor/inspetor-ios-demo-app). You'll find all of our tracker requests and how to instantiante our library with the best practices. Good luck!
+If you think that this tutorial and whatever you saw 'til now wasn't clear enough, maybe you need some hand's on. Thinking about that, our team builded an Demo App to test our library and you can clone from [here](https://github.com/inspetor/inspetor-ios-demo-app). You'll find all of our tracker requests and how to instantiante our library with the best practices.
 
 ## Setup Guide
 This is the step-by-step Inspetor integration:
@@ -27,12 +27,12 @@ When you import the Inspetor library you will see that you are actually installi
 ### Library setup
 You must provide your config to setup our library. To do that, we created a data class called InspetorConfig (duh) and you just have to do something like that:
 
-All the access to the Inspetor functions is made through our **sharedInstance** that is available by calling the `Inspetor.sharedInstance`. But before you can call any of our functions you need to configure the library. To do that all you need is the following code bellow.
+All the access to the Inspetor functions is made through our `sharedInstance()` that is available by calling the `Inspetor.sharedInstance()`. But before you can call any of our functions you need to configure the library. To do that all you need is call the function `setup` from our `sharedInstance()` and pass your configurations. You can see an example bellow:
 
 You **should** instantiate the Inspetor Library in your application `AppDelegate` in the `didFinishLaunchingWithOptions` function.
 
 ```
-  Inspetor.sharedInstance.inspetorConfig = InspetorConfig(appId: "cool.name", trackerName: "ID123", devEnv: true)
+  Inspetor.sharedInstance().setup(appId: "cool.name", trackerName: "ID123", devEnv: true))
 ```
 
 The ***"appId"*** is an unique identifier that the Inspetor Team will provide to you. The ***"trackerName"*** is a name that will help us to find your data in our database and we'll provide you with a couple of them. The ***"devEnv"*** is a boolean statement that you set to indicate that your are testing the library (development enviroment). It's set to false by default.
@@ -47,8 +47,8 @@ Here we will show you some details to be aware in you are calling the Inspetor t
 All of out *track functions* can throw exceptions, but the only exception they will through is if you forget to configure the Inspetor Library before calling one of them. Because of that the Inspetor class have a function called `isConfigured()` that returns a boolean saying if you have configured or not the Inspetor Library. We recommend that when you call any of our tracking functions you check if the Inspetor Library is configured. Here is an example on how to do that:
 
 ```
-if (Inspetor.isConfigured()) {
-    try! Inspetor.sharedInstance.trackAccountCreation(accountId: "123")
+if (Inspetor.sharedInstance().isConfigured()) {
+    try! Inspetor.sharedInstance().trackAccountCreation(accountId: "123")
 }
 ```
 
