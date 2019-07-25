@@ -25,7 +25,7 @@ The Inspetor iOS Library can be installed through [CocoaPods](https://cocoapod.o
 When you import the Inspetor library you will see that you are actually installing more than one library, since the Inspetor iOS Library have some depndencies.
 
 ### Library setup
-You must provide your config to setup our library. To do that, we created a data class called InspetorConfig (duh) and you just have to do something like that:
+You must provide your config to setup our library. To do that, you need to pass us your configurations through our `setup()` function.
 
 All the access to the Inspetor functions is made through our `sharedInstance()` that is available by calling the `Inspetor.sharedInstance()`. But before you can call any of our functions you need to configure the library. To do that all you need is call the function `setup` from our `sharedInstance()` and pass your configurations. You can see an example bellow:
 
