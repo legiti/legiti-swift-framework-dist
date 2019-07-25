@@ -32,7 +32,13 @@ All the access to the Inspetor functions is made through our `sharedInstance()` 
 You **should** instantiate the Inspetor Library in your application `AppDelegate` in the `didFinishLaunchingWithOptions` function.
 
 ```
-  Inspetor.sharedInstance().setup(appId: "cool.name", trackerName: "ID123", devEnv: true))
+  do {
+  try Inspetor.sharedInstance().setup(appId: "123", trackerName: "cool.name", devEnv: true)
+} catch TrackerException.internalError(let message) {
+  print(message)
+} catch {
+  print("Error")
+}
 ```
 
 The ***"appId"*** is an unique identifier that the Inspetor Team will provide to you. The ***"trackerName"*** is a name that will help us to find your data in our database and we'll provide you with a couple of them. The ***"devEnv"*** is a boolean statement that you set to indicate that your are testing the library (development enviroment). It's set to false by default.
