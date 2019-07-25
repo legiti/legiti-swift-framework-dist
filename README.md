@@ -3,7 +3,7 @@
 </p>
 
 # Inspetor Antifraud
-Antrifraud Inspetor library for Android.
+Antrifraud Inspetor library for iOS.
 
 ## Description
 Inspetor is an product developed to help your company to avoid fraudulent transactions. This README file should help you to integrate the Inspetor iOS library into your product with a couple steps. 
