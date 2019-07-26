@@ -25,14 +25,12 @@ The Inspetor iOS Library can be installed through [CocoaPods](https://cocoapod.o
 When you import the Inspetor library you will see that you are actually installing more than one library, since the Inspetor iOS Library have some depndencies.
 
 ### Library setup
-You must provide your config to setup our library. To do that, you need to pass us your configurations through our `setup()` function. There is an example in the code snipet bellow.
-
-All the access to the Inspetor functions is made through our `sharedInstance()` that is available by calling the `Inspetor.sharedInstance()`. 
+You must provide your config to setup our library. To do that, you need to pass us your configurations through our `setup()` function. All the access to the Inspetor functions is made through our `sharedInstance()` that is available by calling the `Inspetor.sharedInstance()`. There is an example in the code snipet bellow.
 
 You **should** instantiate the Inspetor Library in your application `AppDelegate` in the `didFinishLaunchingWithOptions` function.
 
 ```
-  do {
+do {
   try Inspetor.sharedInstance().setup(appId: "123", trackerName: "cool.name", devEnv: true)
 } catch TrackerException.requiredConfig(let code, let message) {
   print("code: \(code) - message: \(message)")
@@ -42,6 +40,8 @@ You **should** instantiate the Inspetor Library in your application `AppDelegate
 ```
 
 The ***"appId"*** is an unique identifier that the Inspetor Team will provide to you. The ***"trackerName"*** is a name that will help us to find your data in our database and we'll provide you with a couple of them. The ***"devEnv"*** is a boolean statement that you set to indicate that your are testing the library (development enviroment). It's set to false by default.
+
+The Inspetor `setup()` function can throw an error if you pass us an invalid appId or/and nameTracker. Because of that always double check if the configuration your are passing is the right one.
 
 P.S: always remenber to import the library. You can do that using the following code: `import Inspetor`
 
