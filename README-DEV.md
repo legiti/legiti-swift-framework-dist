@@ -5,7 +5,7 @@ This public repository contains the compiled Swift framework for the Inspetor mo
 ### Private Publishing
 After compiling the Framework in the private repo, move over to this repo and follow these steps:
 - `git add .`
-- `git commit -m '<an informative message here>'
+- `git commit -m "<an informative message here>"`
 - `git push origin master`
 - `git tag -a <version> -m "<what changed?>"`
 - `git push origin --tags`
@@ -15,4 +15,5 @@ Then, you will need to update the Podspec version (currently the podspec is list
 ### Public Publishing
 To publish our Framework in the Cocoapods Specs repo you need to follow this steps:
 - Do all the steps in the private publishing tutorial
+- Update the Inspetor.podspec to the new version
 - `pod trunk push Inspetor.podspec`
