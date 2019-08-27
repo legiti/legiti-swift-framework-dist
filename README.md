@@ -59,14 +59,14 @@ if (Inspetor.sharedInstance().isConfigured()) {
 ```
 
 #### TrackScreenView
-Different from the Inspetor Javascript Library the track of user pageviews (screenview) is not done automatically. You need to add the function `trackScreenView` on every new page.
+Different from the Inspetor Javascript Library the track of user pageviews (screenview) is not done automatically. You need to add the function `trackPageView` on every new page.
 We **strongly recomend** that you add the functions inside the `viewDidLoad` of every ViewController in your app, since this way we can track the screenview action as soon as it happens. You can see an example of this implementation bellow:
 
 ```
 override func viewDidLoad() {
   super.viewDidLoad()
   if (Inspetor.sharedInstance().isConfigured()) {
-      try! Inspetor.sharedInstance().trackAccountCreation(accountId: "123")
+      try! Inspetor.sharedInstance().trackPageView(pageTitle: "login-page")
   }
 }
 ```
