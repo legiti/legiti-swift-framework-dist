@@ -3,35 +3,39 @@
 </p>
 
 # Inspetor Antifraud
-Antrifraud Inspetor library for iOS.
+Inspetor antifraud SDK for Swift (iOS apps) integrations.
 
 ## Description
-Inspetor is an product developed to help your company to avoid fraudulent transactions. This README file should help you to integrate the Inspetor iOS library into your product with a couple steps. 
+Inspetor is a product developed to help your company avoid fraudulent transactions. This README file should help you to integrate the Inspetor iOS library into your product with a couple steps. 
 
-P.S.: the library was made in Swift and all of the code you'll see here is Swift as well.
+P.S.: the library was made in Swift and all of the code you'll see here is in Swift as well.
 
-## Demo
-If you think that this tutorial and whatever you saw 'til now wasn't clear enough, maybe you need some hand's on. Thinking about that, our team builded an Demo App to test our library and you can clone from [here](https://github.com/inspetor/inspetor-ios-demo-app). You'll find all of our tracker requests and how to instantiante our library with the best practices.
+## Demo App
+If you want to see a very simple integration of the library in action you can clone the [inspetor demo app](https://github.com/inspetor/inspetor-ios-demo-app). There you find an implementation on how to setup the library and trigger all tarcking actions. Apart from that, you find the best practices when using our library.
 
-## Setup Guide
-This is the step-by-step Inspetor integration:
-
-### Library Repositories
+## How to use
 The Inspetor iOS Library can be installed through [CocoaPods](https://cocoapod.org). To install all you have to do is follow this steps:
 
-1) Add this to your Podfile: `pod 'Inspetor'` (this uses the latest version).
-2) Run `pod install`.
+1. Add our library to you Podfile (`pod Inspetor`)
+1. Run `pod install` command
 
-When you import the Inspetor library you will see that you are actually installing more than one library, since the Inspetor iOS Library have some depndencies.
+P.S: When you import the Inspetor library you will see that you are actually installing more than one library, since the Inspetor iOS Library have some depndencies.
+
+## API Docs
+You can find more in-depth documentation about our frontend libraries and integrations in general [here](https://inspetor.github.io/docs-frontend).
 
 ### Library setup
-You must provide your config to setup our library. To do that, you need to pass us your configurations through our `setup()` function. All the access to the Inspetor functions is made through our `sharedInstance()` that is available by calling the `Inspetor.sharedInstance()`. There is an example in the code snipet bellow.
+In order to properly relay information to Inspetor's processing pipeline, you'll need to provide customer-specific authentication credentials:
+- App ID (provided by Inspetor)
+- Tracker name (provided by Inspetor)
 
-You **should** instantiate the Inspetor Library in your application `AppDelegate` in the `didFinishLaunchingWithOptions` function.
+With these, you can instantiate the Inspetor tracking instance. Our integration library instantiates a singleton instance to prevent multiple trackers from being instantiated, which could otherwise result in duplicate or inconsistent data being relayed to inspetor. Apart from that, the singleton will let you configure the library only once.
+
+The singleton instance is instantiated as follows:
 
 ```
 do {
-  try Inspetor.sharedInstance().setup(appId: "123", trackerName: "cool.name", devEnv: true)
+  try Inspetor.sharedInstance().setup(appId: "appId", trackerName: "trackerName", devEnv: false)
 } catch TrackerException.requiredConfig(let code, let message) {
   print("code: \(code) - message: \(message)")
 } catch {
@@ -39,28 +43,38 @@ do {
 }
 ```
 
-The ***"appId"*** is an unique identifier that the Inspetor Team will provide to you. The ***"trackerName"*** is a name that will help us to find your data in our database and we'll provide you with a couple of them. The ***"devEnv"*** is a boolean statement that you set to indicate that your are testing the library (development enviroment). It's set to false by default.
+Be advised, that this function can throw an exception if you pass invalids (empty strings or not in the format required) appId or/and trackerName.
 
-The Inspetor `setup()` function can throw an error if you pass us an invalid appId or/and nameTracker. Because of that always double check if the configuration your are passing is the right one.
+We **strongly** recomend you instantiate the Inspetor Library in your application `AppDelegate` in the `didFinishLaunchingWithOptions` function, since this way you will configure the libvrary as soon as the app loads enabling you to call the library functions.
 
-P.S: always remenber to import the library. You can do that using the following code: `import Inspetor`
+All the access to the Inspetor functions is made via calling the `inspetor.sharedInstance()`. 
+
+The parameters passed are the following, in order:
+
+Parameter | Required | Type | Description 
+--------- | -------- | ---- | ----------- 
+appId           | Yes | String  | An unique identifier that the Inspetor Team will provide to you
+trackerName     | Yes | String  | A name that will help us to find your data in our database and we'll provide you with a couple of them
+devEnv          | No  | Boolean | Indicates that your are testing the library (development enviroment), meaning that data is not ready for production. All boolean parameters are `false` by default.
+
+P.S: always remenber to import the library using the  `import Inspetor`
 
 ### Library Calls
 If you've already read the [general Inspetor files](https://inspetor.github.io/docs-frontend), you should be aware of all of Inspetor requests and collection functions.
 
-Here we will show you some details to be aware in you are calling the Inspetor tracking functions.
+Here we will show you some details to be aware of if you are calling the Inspetor tracking functions.
 
 All of out *track functions* can throw exceptions, but the only exception they will through is if you forget to configure the Inspetor Library before calling one of them. Because of that the Inspetor class have a function called `isConfigured()` that returns a boolean saying if you have configured or not the Inspetor Library. We recommend that when you call any of our tracking functions you check if the Inspetor Library is configured. Here is an example on how to do that:
 
 ```
 if (Inspetor.sharedInstance().isConfigured()) {
-    try! Inspetor.sharedInstance().trackScreenView(screenName: "The name of the screen")
+    try! Inspetor.sharedInstance().trackAccountCreation(accountId: "123")
 }
 ```
 
 #### TrackScreenView
 Different from the Inspetor Javascript Library the track of user pageviews (screenview) is not done automatically. You need to add the function `trackPageView` on every new page.
-We **strongly recomend** that you add the functions inside the `viewDidLoad` of every ViewController in your app, since this way we can track the screenview action as soon as it happens. You can see an example of this implementation bellow:
+We **strongly recomend** that you add the functions inside the `viewDidLoad` of every ViewController in your app, since this way we can track the pageview/screenview action as soon as it happens. You can see an example of this implementation bellow:
 
 ```
 override func viewDidLoad() {
@@ -71,8 +85,11 @@ override func viewDidLoad() {
 }
 ```
 
+### User Location
+The Inspetor iOS Library can use the user location to help us provide more accurate results, but it will **never** ask for the user location. If your app has already the permission for the user location the library will automatically capture the user location, othewise it won't send the location to us.
+
 ### Models
-If you are comming from one of our backend libraries you will notice that we do not use models in our frontend libraries. Here you just need to send us the id of the model.
+If you are comming from one of our backend libraries you will notice that we do not use models (e.g. Account, Sale) in our frontend libraries. Here you just need to send us the id of the model (e.g. sale ID, account ID).
 
 ## More Information
 For more info you should check the [Inspetor Frontend docs](https://inspetor.github.io/docs-frontend)
