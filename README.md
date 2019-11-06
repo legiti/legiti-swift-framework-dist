@@ -86,7 +86,7 @@ override func viewDidLoad() {
 ```
 
 ### User Location
-The Inspetor iOS Library can use the user location to help us provide more accurate results, but it will **never** ask for it. If your app already has access user location the library will automatically capture it, otherwise it won't send the location to us.
+The Inspetor iOS Library can use the user location to help us provide more accurate results, but it will **never** ask for it. If your app already has access to user location the library will automatically capture it, otherwise it won't send the location to us.
 
 ### Models
 If you are coming from one of our backend libraries you will notice that we do not use models (e.g. Account, Sale) in our frontend libraries. Here you just need to send us the id of the model (e.g. sale ID, account ID).
