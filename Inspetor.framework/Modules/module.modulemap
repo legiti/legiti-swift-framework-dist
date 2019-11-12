@@ -1,0 +1,11 @@
+framework module Inspetor {
+  umbrella header "Inspetor.h"
+
+  export *
+  module * { export * }
+}
+
+module Inspetor.Swift {
+    header "Inspetor-Swift.h"
+    requires objc
+}
