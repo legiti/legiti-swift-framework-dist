@@ -6,7 +6,7 @@
 Inspetor antifraud SDK for Swift (iOS apps) integrations.
 
 ## Description
-Inspetor is a product developed to help your company avoid fraudulent transactions. This README file should help you to integrate the Inspetor iOS library into your product with a couple steps. 
+Inspetor is a product developed to help your company avoid fraudulent transactions. This README file should help you to integrate the Inspetor iOS library into your product with a couple steps.
 
 P.S.: the library was made in Swift and all of the code you'll see here is in Swift as well.
 
@@ -25,9 +25,10 @@ P.S: When you import the Inspetor library you will see that you are actually ins
 You can find more in-depth documentation about our frontend libraries and integrations in general [here](https://inspetor.github.io/docs-frontend).
 
 ### Library setup
-In order to properly relay information to Inspetor's processing pipeline, you'll need to provide customer-specific authentication credentials:
-- App ID (provided by Inspetor)
-- Tracker name (provided by Inspetor)
+In order to properly relay information to Inspetor's processing pipeline, you'll need to provide your customer-specific authentication credential:
+- authToken (provided by Inspetor)
+
+**P.S:** Remember to use the *sandbox* `authToken` when you are not in production
 
 With these, you can instantiate the Inspetor tracking instance. Our integration library instantiates a singleton instance to prevent multiple trackers from being instantiated, which could otherwise result in duplicate or inconsistent data being relayed to Inspetor. Apart from that, the singleton will let you configure the library only once.
 
@@ -35,7 +36,7 @@ The singleton instance is instantiated as follows:
 
 ```
 do {
-  try Inspetor.sharedInstance().setup(appId: "appId", trackerName: "trackerName", devEnv: false)
+  try Inspetor.sharedInstance().setup(authToken: "authToken")
 } catch TrackerException.requiredConfig(let code, let message) {
   print("code: \(code) - message: \(message)")
 } catch {
@@ -43,19 +44,17 @@ do {
 }
 ```
 
-Be advised, that this function can throw an exception if you pass an invalid appId or/and trackerName (empty strings or not in the format required).
+e advised, that this function can throw an exception if you pass invalids (empty strings or not in the format required) authToken.
 
 We **strongly** recommend you instantiate the Inspetor Library in your application `AppDelegate` in the `didFinishLaunchingWithOptions` function, since this way you will configure the library as soon as the app loads enabling you to call the library functions.
 
-All the access to the Inspetor functions is made by calling the `inspetor.sharedInstance()`. 
+All the access to the Inspetor functions is made by calling the `inspetor.sharedInstance()`.
 
-The parameters passed are the following, in order:
+The function only takes one parameter:
 
-Parameter | Required | Type | Description 
---------- | -------- | ---- | ----------- 
-appId           | Yes | String  | An unique identifier that the Inspetor Team will provide to you
-trackerName     | Yes | String  | A name that will help us to find your data in our database and we'll provide you with a couple of them
-devEnv          | No  | Boolean | Indicates that your are testing the library (development environment), meaning that data is not ready for production. All boolean parameters are `false` by default.
+Parameter | Required | Type | Description
+--------- | -------- | ---- | -----------
+authToken       | Yes | String  | An unique identifier that the Inspetor Team will provide to you
 
 P.S: always remember to import the library using the  `import Inspetor`
 
