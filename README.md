@@ -44,7 +44,7 @@ do {
 }
 ```
 
-e advised, that this function can throw an exception if you pass invalids (empty strings or not in the format required) authToken.
+Be advised, that this function can throw an exception if you pass invalids authToken (empty strings or not in the format required).
 
 We **strongly** recommend you instantiate the Inspetor Library in your application `AppDelegate` in the `didFinishLaunchingWithOptions` function, since this way you will configure the library as soon as the app loads enabling you to call the library functions.
 
