@@ -1,0 +1,11 @@
+framework module Legiti {
+  umbrella header "Legiti.h"
+
+  export *
+  module * { export * }
+}
+
+module Legiti.Swift {
+    header "Legiti-Swift.h"
+    requires objc
+}
