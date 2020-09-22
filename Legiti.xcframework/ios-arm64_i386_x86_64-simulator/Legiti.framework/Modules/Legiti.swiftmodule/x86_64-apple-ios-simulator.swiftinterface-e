@@ -1,0 +1,33 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.3 (swiftlang-1200.0.29.2 clang-1200.0.30.1)
+// swift-module-flags: -target x86_64-apple-ios9.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name Legiti
+import Foundation
+import INTULocationManager
+@_exported import Legiti
+import SnowplowTracker
+import Swift
+import SwiftKeychainWrapper
+public enum TrackerException : Swift.Error {
+  case requiredConfig(code: Swift.Int, message: Swift.String)
+  case internalError(message: Swift.String)
+}
+@_hasMissingDesignatedInitializers public class LegitiClient {
+  @available(*, deprecated, message: "The argument legitiDevEnv is deprecated and will be removed in a future version of the library")
+  public func setup(authToken: Swift.String, legitiDevEnv: Swift.Bool = false) throws
+  public func setup(authToken: Swift.String) throws
+  public func trackPageView(pageTitle: Swift.String) throws
+  public func trackUserCreation(userId: Swift.String) throws
+  public func trackUserUpdate(userId: Swift.String) throws
+  public func trackLogin(userEmail: Swift.String, userId: Swift.String?) throws
+  public func trackLogout(userEmail: Swift.String, userId: Swift.String?) throws
+  public func trackPasswordRecovery(userEmail: Swift.String) throws
+  @available(*, deprecated, message: "This function is deprecated and will be removed in a future version of the library")
+  public func trackPasswordReset(userId: Swift.String) throws
+  public func trackOrderCreation(orderId: Swift.String) throws
+  public func isConfigured() -> Swift.Bool
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers public class Legiti {
+  public static func sharedInstance() -> Legiti.LegitiClient
+  @objc deinit
+}
