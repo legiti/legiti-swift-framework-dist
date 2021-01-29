@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/Legiti-Swift.h</key>
 		<data>
-		IgDjAtMk8RnDKoKCQkSRiIC6Q+o=
+		6WmWxiCEFrfllU9+XWuCKbtT3uc=
 		</data>
 		<key>Headers/Legiti.h</key>
 		<data>
@@ -14,79 +14,79 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		OxpM4FN60WFS6rmr5An2QPVccZ4=
+		EMdG7Nv2TyBPo8NoeQHqzx7ray0=
 		</data>
 		<key>Modules/Legiti.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		McczqvdXFMlUQOh8E3Z1wovNGUI=
+		w4hbRxOHSRtnV9pQ9hQmYneSRPg=
 		</data>
 		<key>Modules/Legiti.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		7qiNvnRc/G8FZK6QbpWyEkpE5kA=
+		reD6mRE+ZwR94PNqFhE9tkWul1A=
 		</data>
 		<key>Modules/Legiti.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		cnGOMkmMbtpiSyfmAPpq9M3wVT0=
+		WWCsNrdlxuD6ob1RW/+6gbMP2ZQ=
 		</data>
 		<key>Modules/Legiti.swiftmodule/arm64.swiftdoc</key>
 		<data>
-		McczqvdXFMlUQOh8E3Z1wovNGUI=
+		w4hbRxOHSRtnV9pQ9hQmYneSRPg=
 		</data>
 		<key>Modules/Legiti.swiftmodule/arm64.swiftinterface</key>
 		<data>
-		7qiNvnRc/G8FZK6QbpWyEkpE5kA=
+		reD6mRE+ZwR94PNqFhE9tkWul1A=
 		</data>
 		<key>Modules/Legiti.swiftmodule/arm64.swiftmodule</key>
 		<data>
-		cnGOMkmMbtpiSyfmAPpq9M3wVT0=
+		WWCsNrdlxuD6ob1RW/+6gbMP2ZQ=
 		</data>
 		<key>Modules/Legiti.swiftmodule/i386-apple-ios-simulator.swiftdoc</key>
 		<data>
-		ONe5rxaA5ojYwZleMvR9k9gCtMg=
+		9/fpNC5xPQvk3UBdW+F7sk/i7ZI=
 		</data>
 		<key>Modules/Legiti.swiftmodule/i386-apple-ios-simulator.swiftinterface</key>
 		<data>
-		mwH15esgzZY29pIgHIZnuwW7bSY=
+		tU7BIr48fKwsPjS+JI61er9QyQU=
 		</data>
 		<key>Modules/Legiti.swiftmodule/i386-apple-ios-simulator.swiftmodule</key>
 		<data>
-		sOpOqOnz+oyTYqI+T61MrOW0Zn0=
+		YcTRXIhbpfC8LVrhy2I9WXEP/hM=
 		</data>
 		<key>Modules/Legiti.swiftmodule/i386.swiftdoc</key>
 		<data>
-		ONe5rxaA5ojYwZleMvR9k9gCtMg=
+		9/fpNC5xPQvk3UBdW+F7sk/i7ZI=
 		</data>
 		<key>Modules/Legiti.swiftmodule/i386.swiftinterface</key>
 		<data>
-		mwH15esgzZY29pIgHIZnuwW7bSY=
+		tU7BIr48fKwsPjS+JI61er9QyQU=
 		</data>
 		<key>Modules/Legiti.swiftmodule/i386.swiftmodule</key>
 		<data>
-		sOpOqOnz+oyTYqI+T61MrOW0Zn0=
+		YcTRXIhbpfC8LVrhy2I9WXEP/hM=
 		</data>
 		<key>Modules/Legiti.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		3eUGWMXdnmna3lTbJLFl6Kx0ZzI=
+		31r3vHA8kw8U+dFJZuRN3kreMQY=
 		</data>
 		<key>Modules/Legiti.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		IWtoA50zNVzpLmXcU7Eu1YpS9yE=
+		Eg9R6fMkOkQqfrB9CtONyyHvWLI=
 		</data>
 		<key>Modules/Legiti.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		qismUzcpexZ2yE18HQj9mnFfDm0=
+		3TcrR0nwXE/++QAXUYgwXXWuTqk=
 		</data>
 		<key>Modules/Legiti.swiftmodule/x86_64.swiftdoc</key>
 		<data>
-		3eUGWMXdnmna3lTbJLFl6Kx0ZzI=
+		31r3vHA8kw8U+dFJZuRN3kreMQY=
 		</data>
 		<key>Modules/Legiti.swiftmodule/x86_64.swiftinterface</key>
 		<data>
-		IWtoA50zNVzpLmXcU7Eu1YpS9yE=
+		Eg9R6fMkOkQqfrB9CtONyyHvWLI=
 		</data>
 		<key>Modules/Legiti.swiftmodule/x86_64.swiftmodule</key>
 		<data>
-		qismUzcpexZ2yE18HQj9mnFfDm0=
+		3TcrR0nwXE/++QAXUYgwXXWuTqk=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -99,11 +99,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			IgDjAtMk8RnDKoKCQkSRiIC6Q+o=
+			6WmWxiCEFrfllU9+XWuCKbtT3uc=
 			</data>
 			<key>hash2</key>
 			<data>
-			ZmK0scjE5/7W0u/2ZAwJWZfH5/VAMuF3bkwDNawaUl4=
+			rWLwDDcpHL5emZUZeJcD+e+p+yGw65GovGlBlcIo9MM=
 			</data>
 		</dict>
 		<key>Headers/Legiti.h</key>
@@ -121,198 +121,198 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			McczqvdXFMlUQOh8E3Z1wovNGUI=
+			w4hbRxOHSRtnV9pQ9hQmYneSRPg=
 			</data>
 			<key>hash2</key>
 			<data>
-			m7LKhytn5H5vEeqdxYj0Vd/qUtZY7I0HSAFs8YpB/xE=
+			KuDl2fHaNEqEnGLD72Up8kcV4SErOTpXmW9dLZvOQSU=
 			</data>
 		</dict>
 		<key>Modules/Legiti.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			7qiNvnRc/G8FZK6QbpWyEkpE5kA=
+			reD6mRE+ZwR94PNqFhE9tkWul1A=
 			</data>
 			<key>hash2</key>
 			<data>
-			fOlecYLP6XL8QHHLxLtUTWC2tDtyFinTeBY28JHdwxk=
+			9cASaQHTA+M9zX8GEPRtIs76E7s+8lzV7hFbrGOyZqE=
 			</data>
 		</dict>
 		<key>Modules/Legiti.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			cnGOMkmMbtpiSyfmAPpq9M3wVT0=
+			WWCsNrdlxuD6ob1RW/+6gbMP2ZQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			diYOvzJC2VpiY7jsQCBVlNDy8BGS6WPdnBQWcLwL19Q=
+			Gi5Woj5CiuLrw/eFg56kpiw3kWev++mrQIfsOEAOrQU=
 			</data>
 		</dict>
 		<key>Modules/Legiti.swiftmodule/arm64.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			McczqvdXFMlUQOh8E3Z1wovNGUI=
+			w4hbRxOHSRtnV9pQ9hQmYneSRPg=
 			</data>
 			<key>hash2</key>
 			<data>
-			m7LKhytn5H5vEeqdxYj0Vd/qUtZY7I0HSAFs8YpB/xE=
+			KuDl2fHaNEqEnGLD72Up8kcV4SErOTpXmW9dLZvOQSU=
 			</data>
 		</dict>
 		<key>Modules/Legiti.swiftmodule/arm64.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			7qiNvnRc/G8FZK6QbpWyEkpE5kA=
+			reD6mRE+ZwR94PNqFhE9tkWul1A=
 			</data>
 			<key>hash2</key>
 			<data>
-			fOlecYLP6XL8QHHLxLtUTWC2tDtyFinTeBY28JHdwxk=
+			9cASaQHTA+M9zX8GEPRtIs76E7s+8lzV7hFbrGOyZqE=
 			</data>
 		</dict>
 		<key>Modules/Legiti.swiftmodule/arm64.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			cnGOMkmMbtpiSyfmAPpq9M3wVT0=
+			WWCsNrdlxuD6ob1RW/+6gbMP2ZQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			diYOvzJC2VpiY7jsQCBVlNDy8BGS6WPdnBQWcLwL19Q=
+			Gi5Woj5CiuLrw/eFg56kpiw3kWev++mrQIfsOEAOrQU=
 			</data>
 		</dict>
 		<key>Modules/Legiti.swiftmodule/i386-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			ONe5rxaA5ojYwZleMvR9k9gCtMg=
+			9/fpNC5xPQvk3UBdW+F7sk/i7ZI=
 			</data>
 			<key>hash2</key>
 			<data>
-			CP4x7EQn6DcIUvPn6QDUzB986oAu3ZRRDt+CpB40dqg=
+			dmXmzK5g3WKjnhBYZBux5te7TxozZdoPTk2ldV71QSo=
 			</data>
 		</dict>
 		<key>Modules/Legiti.swiftmodule/i386-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			mwH15esgzZY29pIgHIZnuwW7bSY=
+			tU7BIr48fKwsPjS+JI61er9QyQU=
 			</data>
 			<key>hash2</key>
 			<data>
-			JSWVd/V04SU4lqF0+K3wWqXVrZOWW3unU+fI2ROof5w=
+			3cMZr2vrMUl5crYD62sWPegaXaLEsK1Dc3UYNV00U70=
 			</data>
 		</dict>
 		<key>Modules/Legiti.swiftmodule/i386-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			sOpOqOnz+oyTYqI+T61MrOW0Zn0=
+			YcTRXIhbpfC8LVrhy2I9WXEP/hM=
 			</data>
 			<key>hash2</key>
 			<data>
-			ZQvH0dOwGL5zRuPxq/QSHaefrCE9StcHzDOFnwGT5NA=
+			VKna7Eg1hmh59T597MW4viUw47X4+csZGKF8JSgaS7k=
 			</data>
 		</dict>
 		<key>Modules/Legiti.swiftmodule/i386.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			ONe5rxaA5ojYwZleMvR9k9gCtMg=
+			9/fpNC5xPQvk3UBdW+F7sk/i7ZI=
 			</data>
 			<key>hash2</key>
 			<data>
-			CP4x7EQn6DcIUvPn6QDUzB986oAu3ZRRDt+CpB40dqg=
+			dmXmzK5g3WKjnhBYZBux5te7TxozZdoPTk2ldV71QSo=
 			</data>
 		</dict>
 		<key>Modules/Legiti.swiftmodule/i386.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			mwH15esgzZY29pIgHIZnuwW7bSY=
+			tU7BIr48fKwsPjS+JI61er9QyQU=
 			</data>
 			<key>hash2</key>
 			<data>
-			JSWVd/V04SU4lqF0+K3wWqXVrZOWW3unU+fI2ROof5w=
+			3cMZr2vrMUl5crYD62sWPegaXaLEsK1Dc3UYNV00U70=
 			</data>
 		</dict>
 		<key>Modules/Legiti.swiftmodule/i386.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			sOpOqOnz+oyTYqI+T61MrOW0Zn0=
+			YcTRXIhbpfC8LVrhy2I9WXEP/hM=
 			</data>
 			<key>hash2</key>
 			<data>
-			ZQvH0dOwGL5zRuPxq/QSHaefrCE9StcHzDOFnwGT5NA=
+			VKna7Eg1hmh59T597MW4viUw47X4+csZGKF8JSgaS7k=
 			</data>
 		</dict>
 		<key>Modules/Legiti.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			3eUGWMXdnmna3lTbJLFl6Kx0ZzI=
+			31r3vHA8kw8U+dFJZuRN3kreMQY=
 			</data>
 			<key>hash2</key>
 			<data>
-			MrHKJjHdAzt1GnsrljzI5W5kjI8avYTS4EHQTxnmmHM=
+			32JGC/ytcv6ynuMox2syyIDdCvveAdxhWa/vjoArSSM=
 			</data>
 		</dict>
 		<key>Modules/Legiti.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			IWtoA50zNVzpLmXcU7Eu1YpS9yE=
+			Eg9R6fMkOkQqfrB9CtONyyHvWLI=
 			</data>
 			<key>hash2</key>
 			<data>
-			mWVz+Q4jvjXnBGS8I0oWbP2xcZ1Mj3Fz7QoUsa8/Q5U=
+			OPx0gUWPIobxta81uCohE0tbh06rP2MaJJCd1F6pZPs=
 			</data>
 		</dict>
 		<key>Modules/Legiti.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			qismUzcpexZ2yE18HQj9mnFfDm0=
+			3TcrR0nwXE/++QAXUYgwXXWuTqk=
 			</data>
 			<key>hash2</key>
 			<data>
-			H7IylRMPOluVpXgN/OB5OPv2Udt52CU/UTMfNkwWo0I=
+			eTkjD8NmzPiAk4FrddIRYLA3qTe+n1FR3h6PgHxTmpY=
 			</data>
 		</dict>
 		<key>Modules/Legiti.swiftmodule/x86_64.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			3eUGWMXdnmna3lTbJLFl6Kx0ZzI=
+			31r3vHA8kw8U+dFJZuRN3kreMQY=
 			</data>
 			<key>hash2</key>
 			<data>
-			MrHKJjHdAzt1GnsrljzI5W5kjI8avYTS4EHQTxnmmHM=
+			32JGC/ytcv6ynuMox2syyIDdCvveAdxhWa/vjoArSSM=
 			</data>
 		</dict>
 		<key>Modules/Legiti.swiftmodule/x86_64.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			IWtoA50zNVzpLmXcU7Eu1YpS9yE=
+			Eg9R6fMkOkQqfrB9CtONyyHvWLI=
 			</data>
 			<key>hash2</key>
 			<data>
-			mWVz+Q4jvjXnBGS8I0oWbP2xcZ1Mj3Fz7QoUsa8/Q5U=
+			OPx0gUWPIobxta81uCohE0tbh06rP2MaJJCd1F6pZPs=
 			</data>
 		</dict>
 		<key>Modules/Legiti.swiftmodule/x86_64.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			qismUzcpexZ2yE18HQj9mnFfDm0=
+			3TcrR0nwXE/++QAXUYgwXXWuTqk=
 			</data>
 			<key>hash2</key>
 			<data>
-			H7IylRMPOluVpXgN/OB5OPv2Udt52CU/UTMfNkwWo0I=
+			eTkjD8NmzPiAk4FrddIRYLA3qTe+n1FR3h6PgHxTmpY=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
